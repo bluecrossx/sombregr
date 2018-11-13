@@ -24,7 +24,7 @@ $config = array(
 		)
 	),
 	"urls" => array(
-		"baseUrl" => "http://example.com"
+		"baseUrl" => "http://www.sombregroup.co.za"
 	),
 	"paths" => array(
 		"resources" => "/path/to/resources",
