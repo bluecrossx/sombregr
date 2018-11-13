@@ -51,17 +51,6 @@ defined("LIBRARY_PATH")
 defined("TEMPLATES_PATH")
 	or define("TEMPLATES_PATH", realpath(dirname(__FILE__) . '/templates'));
 
-defined("ELEMENTS_PATH")
-	or define("ELEMENTS_PATH", realpath(dirname(__FILE__) . '/elements'));
-
-defined("FORMS_PATH")
-	or define("FORMS_PATH", realpath(dirname(__FILE__) . '/forms'));
-
-defined("MAILTO_PATH")
-	or define("MAILTO_PATH", realpath(dirname(__FILE__) . '/mailto'));
-
-
-
 /*
 	Error reporting.
 */
