@@ -1,0 +1,58 @@
+<script>
+    function selectTag(value,parentXs){
+   
+          var parentX = document.getElementById(parentXs);
+           var arr=	parentX.getElementsByClassName('tag');
+          for (var i = 0; i < arr.length; i++) {arr[i].style.display = 'none';}
+  
+        var arr=	parentX.getElementsByClassName(value);
+        for (var i = 0; i < arr.length; i++) {arr[i].style.display = 'block';}
+      
+    }
+    
+  </script>
+  <button onclick="selectTag('red','parent1')">Red</button>
+  <button onclick="selectTag('Yellow','parent1')">blue</button>
+  <button onclick="selectTag('blue','parent1')">green</button>
+
+
+  <input id="in" onkeyup="selectTag(this.value,'parent1')">
+  <div id="parent1">
+    <p class="tag red blue yellow">red blue and yellow</p>
+    <p class="tag red red floral tree grass" style="color: red">red floral tree grass</p>
+    <p class="tag blue modern tree grass" style="color: blue">blue modern tree grass</p>
+    <p class="tag yellow cars modern gold" style="color: green">yellow cars modern gold</p>
+  </div>
+  
+<!--VARIANT-->
+  
+<script>
+  function selectTag2(value,parentXs){
+
+    var parentX = document.getElementById(parentXs);
+    var arr=	parentX.getElementsByClassName('tag');
+
+        for (var i = 0; i < arr.length; i++) {arr[i].style.display = 'none';}
+
+    var res = value.split(" ");
+
+        for (var ix = 0; ix < res.length; ix++) {
+
+          var arr =	parentX.getElementsByClassName(res[ix]);
+
+          for (var i = 0; i < arr.length; i++) {arr[i].style.display = 'block';}
+
+        }
+  }
+  
+</script>
+
+  <input id="in" onkeyup="selectTag2(this.value,'parent2')">
+  <div id="parent2">
+    <p class="tag red blue yellow">red blue and yellow</p>
+    <p class="tag red red floral tree grass" style="color: red">red floral tree grass</p>
+    <p class="tag blue modern tree grass" style="color: blue">blue modern tree grass</p>
+    <p class="tag yellow cars modern gold" style="color: green">yellow cars modern gold</p>
+  </div>
+  
+  
