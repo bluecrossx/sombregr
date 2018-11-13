@@ -33,6 +33,7 @@ $config = array(
 			"layout" => $_SERVER["DOCUMENT_ROOT"] . "/images/layout"
 		)
 	)
+	
 );
 
 /*
