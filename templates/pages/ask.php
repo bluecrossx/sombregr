@@ -6,7 +6,6 @@
 
 	require_once(TEMPLATES_PATH . "/header.php");
     
-    $notifier->changeNoticeMessage("200");
     require_once(TEMPLATES_PATH . "/layout.ask.php");
 
     require_once(TEMPLATES_PATH . "/footer.php");
