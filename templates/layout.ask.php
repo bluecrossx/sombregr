@@ -1,4 +1,6 @@
-
+<?php 
+$notifier->changeNoticeMessage('200');
+?>
 <form method="POST" action="submit.php">
     <label for="question">Why dont you ask a question?</label>
     <input type="text" name="question">
