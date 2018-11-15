@@ -4,14 +4,14 @@ class pdoCall{
 
     public function __construct()
     {
-        // Echo "The following class has been created:".__CLASS__."<br/>";
+        Echo "The following class has been created:".__CLASS__."<br/>";
 
     }
 
     public function __destruct()
     {
        
-        // Echo "The following class has been destroyed:".__CLASS__."<br/>";
+        Echo "The following class has been destroyed:".__CLASS__."<br/>";
 
     }
 
